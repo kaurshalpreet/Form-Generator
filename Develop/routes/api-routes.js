@@ -46,4 +46,27 @@ module.exports = function(app) {
       });
     }
   });
+
+
+app.post("/api/member", function(req, res) {
+  db.Member.create({
+    name: req.body.name,
+  })
+    .then(function() {
+      res.json({});
+    })
+    .catch(function(err) {
+      res.status(401).json(err);
+    });
+});
+
+app.get("/api/member", function(req, res) {
+  db.Member.findAll({})
+    .then(function(data) {
+      res.json({data});
+    })
+    .catch(function(err) {
+      res.status(401).json(err);
+    });
+});
 };
