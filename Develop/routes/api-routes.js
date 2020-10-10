@@ -47,8 +47,8 @@ module.exports = function(app) {
     }
   });
 
-
 app.post("/api/member", function(req, res) {
+  console.log("this is working")
   db.Member.create({
     name: req.body.name,
   })
