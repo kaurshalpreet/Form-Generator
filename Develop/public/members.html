@@ -22,29 +22,76 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
-        <h2>Welcome <span class="member-name"></span></h2>
+        <h3 class="center">Welcome <span class="member-name"></span></h2>
       </div>
     </div>
   </div>
+<h1 class="center">CREATE CLIENT</h1>
+  <div>
+    <form action="/action_page.php">
+      <label for="fname">FIRST NAME</label>
+      <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+  
+      <label for="lname">LAST NAME</label>
+      <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
 
-  <div class="">
-    <div class="row">
-      <div class="container">
-        <div class="col-md-6 col-md-offset-3">
-        <button id="create-client" style="font-family: 'Shadows Into Light', cursive; font-size: 40px;"> Create client</button> <br>
-         <div><input class="client-name" type="text" ></div>
-        <label for="Clients" style="font-family: 'Shadows Into Light', cursive; font-size: 40px;">Choose a Client: </label>
-            <select style="font-family: 'Shadows Into Light', cursive; font-size: 30px; margin-top: 40px;" id="client" name="Client">
-              <option value="1">Andy</option>
-              <option value="2">Gary</option>
-              <option value="3">Paul</option>
-              <option value="4">Dave</option>
-            </select>
-          </div>
-      </div>
+      <label for="ssn">SOCIAL SECURITY NUMBER</label>
+      <input type="text" id="ssn" name="ssnumber" placeholder="000-00-0000">
+
+      <label for="dob">DATE OF BIRTH</label>
+      <input type="text" id="dob" name="dateofbirth" placeholder="Month/Day/Year">
+
+      <label for="Sfname">SPOUSE FIRST NAME</label>
+      <input type="text" id="Sfname" name="spousefirstname" placeholder="Enter your spouse first name">
+
+      <label for="Slname">SPOUSE LAST NAME</label>
+      <input type="text" id="Slname" name="Slastname" placeholder="Enter your spouse last name">
+
+      <label for="spousessn">SOCIAL SECURITY NUMBER</label>
+      <input type="text" id="spousessn" name="spousessnumber" placeholder="000-00-0000">
+
+      <label for="sdob">SPOUSE DATE OF BIRTH</label>
+      <input type="text" id="sdob" name="sdateofbirth" placeholder="Month/Day/Year">
+
+      <label for="homeaddress">HOME ADDRESS</label>
+      <input type="text" id="Haddress" name="Haddress" placeholder="Enter Street and Apartment Number">
+
+      <label for="Caddress">CITY</label>
+      <input type="text" id="Caddress" name="city" placeholder="Enter your City">
+
+      <label for="Saddress">STATE</label>
+      <input type="text" id="Saddress" name="state" placeholder="Enter your State">
+
+      <label for="Zipcode">ZIP CODE</label>
+      <input type="text" id="Zipcode" name="Zipcode" placeholder="Enter your Zip Code">
+
+      <label for="phone">PHONE (DAY)</label>
+      <input type="text" id="phone" name="Phonenumber" placeholder="(000) 00-0000">
+
+      <label for="email">EMAIL ADDRESS</label>
+      <input type="text" id="email" name="emailaddress" placeholder="Enter your email address">
+
+      <h1 class="center">CHOOSE CLIENT</h1>
+
+      <label for="clientnames">CLIENT NAMES</label>
+      <select id="clientnames" name="client">
+        <option value="Clients">Select Client</option>
+        <option value="Andy">Andy Jones</option>
+        <option value="Ivy">Ivy Mission</option>
+      </select>
+
+      <h1 class="center">CHOOSE FORMS</h1>
+
+      <label for="country">AVAILABLE FORMS</label>
+      <select id="country" name="country">
+        <option value="Forms">Select Forms</option>
+        <option value="DMV">DMV Application</option>
+        <option value="f1040">Form 1040</option>
+      </select>
+    
+      <input type="submit" value="Submit">
+    </form>
   </div>
-
-
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/members.js"></script>
