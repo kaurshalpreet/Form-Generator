@@ -35,6 +35,43 @@
       <label for="lname">LAST NAME</label>
       <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
 
+
+  <div class="">
+    <div class="row">
+      <div class="container">
+        <div class="col-md-6 col-md-offset-3">
+          <label for="Clients" style="font-family: 'Shadows Into Light', cursive; font-size: 40px;">Enter the name of the new Client: </label>
+          <div><input class="client-name" type="text" ></div>
+          <button id="create-client" style="font-family: 'Shadows Into Light', cursive; font-size: 40px;"> Create client</button> <br>
+        <label for="Clients" style="font-family: 'Shadows Into Light', cursive; font-size: 40px;">Choose a Client: </label>
+            <select style="font-family: 'Shadows Into Light', cursive; font-size: 30px; margin-top: 40px;" id="client" name="Client">
+              <!-- <option value="1">Andy</option>
+              <option value="2">Gary</option>
+              <option value="3">Paul</option>
+              <option value="4">Dave</option> -->
+            </select>
+          </div>
+      </div>
+  </div>
+
+
+
+      <label for="Caddress">CITY</label>
+      <input type="text" id="Caddress" name="city" placeholder="Enter your City">
+
+
+<h1 class="center" style="font-family: 'Shadows Into Light', cursive; font-size: 40px;">CREATE CLIENT</h1>
+  <div>
+    <form>
+      <label for="fname">FIRST NAME</label>
+      <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+
+      <label for="mname">MIDDLE INITIALS</label>
+      <input type="text" id="mname" name="firstname" placeholder="Enter your first name">
+  
+      <label for="lname">LAST NAME</label>
+      <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+
       <label for="ssn">SOCIAL SECURITY NUMBER</label>
       <input type="text" id="ssn" name="ssnumber" placeholder="000-00-0000">
 
@@ -44,32 +81,55 @@
       <label for="Sfname">SPOUSE FIRST NAME</label>
       <input type="text" id="Sfname" name="spousefirstname" placeholder="Enter your spouse first name">
 
+      <label for="Smname">SPOUSE MIDDLE INITIALS</label>
+      <input type="text" id="smname" name="firstname" placeholder="Enter your first name">
+
       <label for="Slname">SPOUSE LAST NAME</label>
       <input type="text" id="Slname" name="Slastname" placeholder="Enter your spouse last name">
 
-      <label for="spousessn">SOCIAL SECURITY NUMBER</label>
+      <label for="spousessn">SPOUSE SOCIAL SECURITY NUMBER</label>
       <input type="text" id="spousessn" name="spousessnumber" placeholder="000-00-0000">
 
       <label for="sdob">SPOUSE DATE OF BIRTH</label>
       <input type="text" id="sdob" name="sdateofbirth" placeholder="Month/Day/Year">
 
-      <label for="homeaddress">HOME ADDRESS</label>
-      <input type="text" id="Haddress" name="Haddress" placeholder="Enter Street and Apartment Number">
+      <label for="homeaddress">ADDRESS 1</label>
+      <input type="text" id="addressOne" name="Haddress" placeholder="Enter Street and Apartment Number">
+
+      <label for="homeaddress">ADDRESS 2</label>
+      <input type="text" id="addressTwo" name="Haddress" placeholder="Enter Street and Apartment Number">
+
+      <label for="homeaddress">APT #</label>
+      <input type="text" id="addressThree" name="Haddress" placeholder="Enter Street and Apartment Number">
 
       <label for="Caddress">CITY</label>
-      <input type="text" id="Caddress" name="city" placeholder="Enter your City">
+      <input type="text" id="city" name="city" placeholder="Enter your City">
 
       <label for="Saddress">STATE</label>
-      <input type="text" id="Saddress" name="state" placeholder="Enter your State">
+      <input type="text" id="state" name="state" placeholder="Enter your State">
 
       <label for="Zipcode">ZIP CODE</label>
-      <input type="text" id="Zipcode" name="Zipcode" placeholder="Enter your Zip Code">
+      <input type="text" id="zipCode" name="Zipcode" placeholder="Enter your Zip Code">
+
+      <label for="foreignCountryName">FOREIGN COUNTRY NAME</label>
+      <input type="text" id="foreignCountryName" name="fCountryName" placeholder="Enter your Country Name">
+
+      <label for="foreignProvinceState">FOREIGN PROVINCE STATE</label>
+      <input type="text" id="foreignProvinceState" name="fProvinceState" placeholder="Enter your Province State">
+
+      <label for="foreignPostalCode">FOREIGN POSTAL CODE</label>
+      <input type="text" id="foreignPostalCode" name="fPostalCode" placeholder="Enter your Postal Code">
+
+
 
       <label for="phone">PHONE (DAY)</label>
       <input type="text" id="phone" name="Phonenumber" placeholder="(000) 00-0000">
 
       <label for="email">EMAIL ADDRESS</label>
       <input type="text" id="email" name="emailaddress" placeholder="Enter your email address">
+
+
+      <input id="save-button" type="submit" value="Save">
 
       <h1 class="center">CHOOSE CLIENT</h1>
 
