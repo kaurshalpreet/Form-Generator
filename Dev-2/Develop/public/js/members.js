@@ -1,4 +1,12 @@
 $(document).ready(function() {
+
+  $.get("/api/member").then(function(data) {
+    console.log(data)
+    let dropDownData = $("#client")
+    $.each(data.data, function() {
+      dropDownData.append($("<option />").val(this.id).text(this.name));
+  });
+  });
   // This file just does a GET request to figure out which user is logged in
   // and updates the HTML on the page
   $.get("/api/user_data").then(function(data) {
@@ -52,8 +60,29 @@ $(document).ready(function() {
     // console.log($(this).val())
        var id = $(this).val();
       console.log(id);
-      $.get("/api/renderClient/:id").then(function(data) {
-        console.log(data)
+      $.get("/api/member/"+id).then(function(data) {
+        console.log(data);
+        $("#fname").val(data.data.name);
+        $("#mname").val(data.data.m_initial);
+        $("#lname").val(data.data.last_name);
+        $("#ssn").val(data.data.ss_number);
+        $("#dob").val(data.data.d_o_b);
+        $("#Sfname").val(data.data.spouse_first_name);
+        $("#smname").val(data.data.spouse_middle_initial);
+        $("#Slname").val(data.data.spouse_last_name);
+        $("#spousessn").val(data.data.spouse_ss_number);
+        $("#sdob").val(data.data.spouse_d_o_b);
+        $("#addressOne").val(data.data.address_one);
+        $("#addressTwo").val(data.data.address_two);
+        $("#addressThree").val(data.data.apartment_number);
+        $("#city").val(data.data.city);
+        $("#state").val(data.data.state);
+        $("#zipCode").val(data.data.zip);
+        $("#foreignCountryName").val(data.data.foreign_country_name);
+        $("#foreignProvinceState").val(data.data.foreign_province_state);
+        $("#foreignPostalCode").val(data.data.foreign_postal_code);
+        $("#phone").val(data.data.phone_number);
+        $("#email").val(data.data.email);
 
       });
   })
