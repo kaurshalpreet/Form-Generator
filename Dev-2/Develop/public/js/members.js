@@ -68,6 +68,26 @@ $("#submit-btn").click (function(){
 		var mname = $('#mname').val();
 		var lname = $('#lname').val();
 		var ssn   = $('#ssn').val();
+    var dob   = $('#dob').val();
+    var Sfname   = $('#Sfname').val();
+    var smname   = $('#smname').val();
+    var Slname  = $('#Slname').val();
+    var spousessn  = $('#spousessn').val();
+    var addressOne = $('#addressOne').val();
+    var addressTwo   = $('#addressTwo').val();
+    // var addressThree   = $('#addressThree').val();
+    // var city  = $('#city').val();
+    // var state = $('#state').val();
+    // var zipCode = $('#zipCode').val();
+    var foreignCountryName   = $('#foreignCountryName').val();
+    var foreignProvinceState   = $('#foreignProvinceState').val();
+    var foreignPostalCode   = $('#foreignPostalCode').val();
+    // var phone   = $('#phone').val();
+    // var email   = $('#email').val();
+
+
+
+
 
 		doc.setFontSize(11);
 		doc.setTextColor(92, 76, 76);
@@ -75,7 +95,23 @@ $("#submit-btn").click (function(){
 		doc.text(23, 109,  name);
 		doc.text(150, 109, mname);
 		doc.text(235, 109, lname);
-		doc.text(490, 109, ssn  );
+    doc.text(490, 109, ssn  );
+    doc.text(23,501, dob  );
+    doc.text(23,134, Sfname  );
+    doc.text(150,134, smname  );
+    doc.text(235,134, Slname  );
+    doc.text(490,134, spousessn  );
+    doc.text(23,160, addressOne  );
+    doc.text(23,185, addressTwo  );
+    // doc.text(23,566, addressThree  );
+    // doc.text(23,577, city  );
+    // doc.text(23,588, state  );
+    // doc.text(23,599, zipCode  );
+    doc.text(23,210, foreignCountryName  );
+    doc.text(250,210, foreignProvinceState  );
+    doc.text(407,210, foreignPostalCode  );
+    // doc.text(23,643, phone  );
+    // doc.text(23,644, email  );
 		doc.save('test.pdf');
 });
 
