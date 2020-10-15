@@ -104,9 +104,11 @@ $("#submit-btn").click(function () {
   console.log(formtype)
   if (formtype == "DMV") {
     $("#dmv-form").show()
+    $("#irs-form").hide()
 
   } else if (formtype == "f1040") {
     $("#irs-form").show()
+    $("#dmv-form").hide()
 
 
   }
