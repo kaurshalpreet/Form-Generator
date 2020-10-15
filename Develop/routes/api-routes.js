@@ -104,16 +104,16 @@ app.get("/api/member", function(req, res) {
 });
 
 
-app.get("/api/renderClient/:id", function(req, res) {
-  console.log(req.body)
-  // db.Member.findOne({ where: {id: req.body.data.id} })
-  // .then(function(data) {
-    // res.json({data});
-    // console.log(data)
-  // })
-  // .catch(function(err) {
-  //   res.status(401).json(err);
-  // });
+app.get("/api/member/:id", function(req, res) {
+  console.log(req.params)
+  db.Member.findOne({ where: {id: req.params.id} })
+  .then(function(data) {
+    res.json({data});
+    console.log(data.dataValues)
+  })
+  .catch(function(err) {
+    res.status(401).json(err);
+  });
 });
 
 
