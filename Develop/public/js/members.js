@@ -54,21 +54,17 @@ $(document).ready(function () {
     console.log(formtype)
     if (formtype == "DMV") {
 
-      reg334()
+      reg334();
+
     } else if (formtype == "f1040") {
 
-      irs1040()
+      irs1040();
 
     }
-    // } ).then(function(data){
-    //   $.get("/api/member").then(function(data) {
-    //     console.log(data)
-    //   });
-    // });
+   
   });
 
   $("#client").change(function () {
-    // console.log($(this).val())
     var id = $(this).val();
     console.log(id);
     $.get("/api/member/" + id).then(function (data) {
@@ -103,13 +99,14 @@ $("#submit-btn").click(function () {
   var formtype = $("#country option:selected").val()
   console.log(formtype)
   if (formtype == "DMV") {
-    $("#dmv-form").show()
-    $("#irs-form").hide()
+    // $("#dmv-form").show()
+    $("#irs-form").show()
+
+
 
   } else if (formtype == "f1040") {
     $("#irs-form").show()
-    $("#dmv-form").hide()
-
+    // $("#dmv-form").hide()
 
   }
 });

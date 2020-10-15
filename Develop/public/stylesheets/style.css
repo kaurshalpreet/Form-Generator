@@ -69,10 +69,8 @@ div {
 .upperDiv {
   padding-top: 0px;
   padding-bottom: 0px;
-  /* margin-top: 0px;
-  margin-bottom: 0px; */
 }
- 
+
 body {
   background-image: linear-gradient(120deg, #ded8e6, #c3e3e8);
 }
