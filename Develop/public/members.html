@@ -45,7 +45,7 @@
           <label for="country">AVAILABLE FORMS</label>
           <select id="country" name="country">
             <option value="" selected disabled> Select Form</option>
-            <option value="DMV" default>DMV Application</option>
+            <option value="DMV">DMV Application</option>
             <option value="f1040">Form 1040</option>
           </select>
 
@@ -60,9 +60,6 @@
           <h1 class="center">CREATE CLIENT</h1>
           <div>
             <form>
-
-
-
               <div id="irs-form">
                 <label for="fname">FIRST NAME</label>
                 <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
@@ -83,7 +80,7 @@
                 <input type="text" id="Sfname" name="spousefirstname" placeholder="Enter your spouse first name">
 
                 <label for="Smname">SPOUSE MIDDLE INITIALS</label>
-                <input type="text" id="smname" name="firstname" placeholder="Enter your first name">
+                <input type="text" id="smname" name="spousemiddlename" placeholder="Enter you spouse middle name">
 
                 <label for="Slname">SPOUSE LAST NAME</label>
                 <input type="text" id="Slname" name="Slastname" placeholder="Enter your spouse last name">
@@ -182,8 +179,7 @@
                 <input type="text" id="foreignCountryName" name="fCountryName" placeholder="Enter your Country Name">
 
                 <label for="foreignProvinceState">FOREIGN PROVINCE STATE</label>
-                <input type="text" id="foreignProvinceState" name="fProvinceState"
-                  placeholder="Enter your Province State">
+                <input type="text" id="foreignProvinceState" name="fProvinceState" placeholder="Enter your Province State">
 
                 <label for="foreignPostalCode">FOREIGN POSTAL CODE</label>
                 <input type="text" id="foreignPostalCode" name="fPostalCode" placeholder="Enter your Postal Code">
@@ -194,9 +190,7 @@
                 <label for="email">EMAIL ADDRESS</label>
                 <input type="text" id="email" name="emailaddress" placeholder="Enter your email address">
 
-
               </div>
-
             </form>
           </div>
           <input id="save-button" type="submit" value="Save">
