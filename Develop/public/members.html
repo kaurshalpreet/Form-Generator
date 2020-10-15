@@ -27,211 +27,187 @@
     </div>
   </div>
 
-  <div class="">
-    <div class="row">
+  <div class="abc">
+    <div class="row upperDiv">
       <div class="container">
-        <div class="col-md-6 col-md-offset-3">
-          <label for="Clients" style="font-family: 'Shadows Into Light', cursive; font-size: 40px;">Enter the name of
-            the new Client: </label>
-          <div><input class="client-name" type="text"></div>
-          <button id="create-client" style="font-family: 'Shadows Into Light', cursive; font-size: 40px;"> Create
-            client</button> <br>
-          <label for="Clients" style="font-family: 'Shadows Into Light', cursive; font-size: 40px;">Choose a Client:
+        <div class="col-md-6">
+          <label for="Clients"><h1>ENTER THE NAME OF NEW CLIENT</h1></label>
+          <input class="client-name" type="text">
+          <button id="create-client"> Create
+            Client</button> <br>
+          <label for="Clients"><h1>CHOOSE CLIENT</h1>
           </label>
-          <select style="font-family: 'Shadows Into Light', cursive; font-size: 30px; margin-top: 40px;" id="client"
-            name="Client">
-            <!-- <option value="1">Andy</option>
-              <option value="2">Gary</option>
-              <option value="3">Paul</option>
-              <option value="4">Dave</option> -->
+          <select id="client" name="Client">
+            <option value="" selected disabled>Client Names</option>
           </select>
           <h1 class="center">CHOOSE FORMS</h1>
 
           <label for="country">AVAILABLE FORMS</label>
           <select id="country" name="country">
-            <!-- <option value="Forms">Select Forms</option> -->
+            <option value="" selected disabled> Select Form</option>
             <option value="DMV" default>DMV Application</option>
             <option value="f1040">Form 1040</option>
           </select>
-  
+
           <button id="submit-btn" type="submit" value="Submit">Submit</button>
         </div>
       </div>
     </div>
 
+    <div class="row upperDiv">
+      <div class="container">
+        <div class="col-md-6">
+          <h1 class="center">CREATE CLIENT</h1>
+          <div>
+            <form>
 
-    <h1 class="center" style="font-family: 'Shadows Into Light', cursive; font-size: 40px;">CREATE CLIENT</h1>
-    <div>
-      <form>
 
 
+              <div id="irs-form">
+                <label for="fname">FIRST NAME</label>
+                <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
 
-        <div id="irs-form">
-          <label for="fname">FIRST NAME</label>
-          <input type="text" id="fname" name="firstname" placeholder="Enter your first name"
-            value="Enter your first name">
+                <label for="mname">MIDDLE INITIALS</label>
+                <input type="text" id="mname" name="mname" placeholder="Enter your first name">
 
-          <label for="mname">MIDDLE INITIALS</label>
-          <input type="text" id="mname" name="mname" placeholder="Enter your first name" value="middle initial">
+                <label for="lname">LAST NAME</label>
+                <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
 
-          <label for="lname">LAST NAME</label>
-          <input type="text" id="lname" name="lastname" placeholder="Enter your last name" value="Enter your last name">
+                <label for="ssn">SOCIAL SECURITY NUMBER</label>
+                <input type="text" id="ssn" name="ssnumber" placeholder="000-00-0000">
 
-          <label for="ssn">SOCIAL SECURITY NUMBER</label>
-          <input type="text" id="ssn" name="ssnumber" placeholder="000-00-0000" value="000-00-0000">
+                <label for="dob">DATE OF BIRTH</label>
+                <input type="text" id="dob" name="dateofbirth" placeholder="Month/Day/Year">
 
-          <label for="dob">DATE OF BIRTH</label>
-          <input type="text" id="dob" name="dateofbirth" placeholder="Month/Day/Year" value="Month/Day/Year">
+                <label for="Sfname">SPOUSE FIRST NAME</label>
+                <input type="text" id="Sfname" name="spousefirstname" placeholder="Enter your spouse first name">
 
-          <label for="Sfname">SPOUSE FIRST NAME</label>
-          <input type="text" id="Sfname" name="spousefirstname" placeholder="Enter your spouse first name"
-            value="spouse first name">
+                <label for="Smname">SPOUSE MIDDLE INITIALS</label>
+                <input type="text" id="smname" name="firstname" placeholder="Enter your first name">
 
-          <label for="Smname">SPOUSE MIDDLE INITIALS</label>
-          <input type="text" id="smname" name="firstname" placeholder="Enter your first name" value="spouse mid init">
+                <label for="Slname">SPOUSE LAST NAME</label>
+                <input type="text" id="Slname" name="Slastname" placeholder="Enter your spouse last name">
 
-          <label for="Slname">SPOUSE LAST NAME</label>
-          <input type="text" id="Slname" name="Slastname" placeholder="Enter your spouse last name"
-            value="spouse last name">
+                <label for="spousessn">SPOUSE SOCIAL SECURITY NUMBER</label>
+                <input type="text" id="spousessn" name="spousessnumber" placeholder="000-00-0000">
 
-          <label for="spousessn">SPOUSE SOCIAL SECURITY NUMBER</label>
-          <input type="text" id="spousessn" name="spousessnumber" placeholder="000-00-0000" value="000-00-0000">
+                <label for="sdob">SPOUSE DATE OF BIRTH</label>
+                <input type="text" id="sdob" name="sdateofbirth" placeholder="Month/Day/Year">
 
-          <label for="sdob">SPOUSE DATE OF BIRTH</label>
-          <input type="text" id="sdob" name="sdateofbirth" placeholder="Month/Day/Year" value="Month/Day/Year">
+                <label for="homeaddress">ADDRESS 1</label>
+                <input type="text" id="addressOne" name="Haddress" placeholder="Enter Street and Apartment Number">
 
-          <label for="homeaddress">ADDRESS 1</label>
-          <input type="text" id="addressOne" name="Haddress" placeholder="Enter Street and Apartment Number"
-            value="Enter Street and Apartment Number">
+                <label for="homeaddress">ADDRESS 2</label>
+                <input type="text" id="addressTwo" name="Haddress" placeholder="Enter Street and Apartment Number">
 
-          <label for="homeaddress">ADDRESS 2</label>
-          <input type="text" id="addressTwo" name="Haddress" placeholder="Enter Street and Apartment Number"
-            value="Enter Street and Apartment Number">
+                <label for="homeaddress">APT #</label>
+                <input type="text" id="addressThree" name="Haddress" placeholder="Enter Street and Apartment Number">
 
-          <label for="homeaddress">APT #</label>
-          <input type="text" id="addressThree" name="Haddress" placeholder="Enter Street and Apartment Number"
-            value="Enter Street and Apartment Number">
+                <label for="Caddress">CITY</label>
+                <input type="text" id="city" name="city" placeholder="Enter your City">
 
-          <label for="Caddress">CITY</label>
-          <input type="text" id="city" name="city" placeholder="Enter your City" value="Enter your City">
+                <label for="Saddress">STATE</label>
+                <input type="text" id="state" name="state" placeholder="Enter your State">
 
-          <label for="Saddress">STATE</label>
-          <input type="text" id="state" name="state" placeholder="Enter your State" value="Enter your State">
+                <label for="Zipcode">ZIP CODE</label>
+                <input type="text" id="zipCode" name="Zipcode" placeholder="Enter your Zip Code">
 
-          <label for="Zipcode">ZIP CODE</label>
-          <input type="text" id="zipCode" name="Zipcode" placeholder="Enter your Zip Code" value="Enter your Zip Code">
+                <label for="foreignCountryName">FOREIGN COUNTRY NAME</label>
+                <input type="text" id="foreignCountryName" name="fCountryName" placeholder="Enter your Country Name">
 
-          <label for="foreignCountryName">FOREIGN COUNTRY NAME</label>
-          <input type="text" id="foreignCountryName" name="fCountryName" placeholder="Enter your Country Name"
-            value="Enter your Country Name">
+                <label for="foreignProvinceState">FOREIGN PROVINCE STATE</label>
+                <input type="text" id="foreignProvinceState" name="fProvinceState"
+                  placeholder="Enter your Province State">
 
-          <label for="foreignProvinceState">FOREIGN PROVINCE STATE</label>
-          <input type="text" id="foreignProvinceState" name="fProvinceState" placeholder="Enter your Province State"
-            value="Enter your Province State">
+                <label for="foreignPostalCode">FOREIGN POSTAL CODE</label>
+                <input type="text" id="foreignPostalCode" name="fPostalCode" placeholder="Enter your Postal Code">
 
-          <label for="foreignPostalCode">FOREIGN POSTAL CODE</label>
-          <input type="text" id="foreignPostalCode" name="fPostalCode" placeholder="Enter your Postal Code"
-            value="Foreign Code">
+                <label for="phone">PHONE (DAY)</label>
+                <input type="text" id="phone" name="Phonenumber" placeholder="(000) 00-0000">
 
-          <label for="phone">PHONE (DAY)</label>
-          <input type="text" id="phone" name="Phonenumber" placeholder="(000) 00-0000" value="(000) 00-0000">
+                <label for="email">EMAIL ADDRESS</label>
+                <input type="text" id="email" name="emailaddress" placeholder="Enter your email address">
+              </div>
 
-          <label for="email">EMAIL ADDRESS</label>
-          <input type="text" id="email" name="emailaddress" placeholder="Enter your email address"
-            value="Enter your email address">
+              <div id="dmv-form">
+                <label for="fname">FIRST NAME</label>
+                <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+
+                <label for="mname">MIDDLE INITIALS</label>
+                <input type="text" id="mname" name="mname" placeholder="Enter your first name">
+
+                <label for="lname">LAST NAME</label>
+                <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+
+                <label for="ssn">SOCIAL SECURITY NUMBER</label>
+                <input type="text" id="ssn" name="ssnumber" placeholder="000-00-0000">
+
+                <label for="dob">DATE OF BIRTH</label>
+                <input type="text" id="dob" name="dateofbirth" placeholder="Month/Day/Year">
+
+                <label for="Sfname">SPOUSE FIRST NAME</label>
+                <input type="text" id="Sfname" name="spousefirstname" placeholder="Enter your spouse first name">
+
+                <label for="Smname">SPOUSE MIDDLE INITIALS</label>
+                <input type="text" id="smname" name="firstname" placeholder="Enter your spouse middle name">
+
+                <label for="Slname">SPOUSE LAST NAME</label>
+                <input type="text" id="Slname" name="Slastname" placeholder="Enter your spouse last name">
+
+                <label for="spousessn">SPOUSE SOCIAL SECURITY NUMBER</label>
+                <input type="text" id="spousessn" name="spousessnumber" placeholder="000-00-0000">
+
+                <label for="sdob">SPOUSE DATE OF BIRTH</label>
+                <input type="text" id="sdob" name="sdateofbirth" placeholder="Month/Day/Year">
+
+                <label for="homeaddress">ADDRESS 1</label>
+                <input type="text" id="addressOne" name="Haddress" placeholder="Enter Street and Apartment Number">
+
+                <label for="homeaddress">ADDRESS 2</label>
+                <input type="text" id="addressTwo" name="Haddress" placeholder="Enter Street and Apartment Number">
+
+                <label for="homeaddress">APT #</label>
+                <input type="text" id="addressThree" name="Haddress" placeholder="Enter Street and Apartment Number">
+
+                <label for="Caddress">CITY</label>
+                <input type="text" id="city" name="city" placeholder="Enter your City">
+
+                <label for="Saddress">STATE</label>
+                <input type="text" id="state" name="state" placeholder="Enter your State">
+
+                <label for="Zipcode">ZIP CODE</label>
+                <input type="text" id="zipCode" name="Zipcode" placeholder="Enter your Zip Code">
+
+                <label for="foreignCountryName">FOREIGN COUNTRY NAME</label>
+                <input type="text" id="foreignCountryName" name="fCountryName" placeholder="Enter your Country Name">
+
+                <label for="foreignProvinceState">FOREIGN PROVINCE STATE</label>
+                <input type="text" id="foreignProvinceState" name="fProvinceState"
+                  placeholder="Enter your Province State">
+
+                <label for="foreignPostalCode">FOREIGN POSTAL CODE</label>
+                <input type="text" id="foreignPostalCode" name="fPostalCode" placeholder="Enter your Postal Code">
+
+                <label for="phone">PHONE (DAY)</label>
+                <input type="text" id="phone" name="Phonenumber" placeholder="(000) 00-0000">
+
+                <label for="email">EMAIL ADDRESS</label>
+                <input type="text" id="email" name="emailaddress" placeholder="Enter your email address">
+
+
+              </div>
+
+            </form>
+          </div>
+          <input id="save-button" type="submit" value="Save">
         </div>
-
-        <div id="dmv-form">
-          <label for="fname">FIRST NAME</label>
-          <input type="text" id="fname" name="firstname" placeholder="Enter your first name"
-            value="Enter your first name">
-
-          <label for="mname">MIDDLE INITIALS</label>
-          <input type="text" id="mname" name="mname" placeholder="Enter your first name" value="middle initial">
-
-          <label for="lname">LAST NAME</label>
-          <input type="text" id="lname" name="lastname" placeholder="Enter your last name" value="Enter your last name">
-
-          <label for="ssn">SOCIAL SECURITY NUMBER</label>
-          <input type="text" id="ssn" name="ssnumber" placeholder="000-00-0000" value="000-00-0000">
-
-          <label for="dob">DATE OF BIRTH</label>
-          <input type="text" id="dob" name="dateofbirth" placeholder="Month/Day/Year" value="Month/Day/Year">
-
-          <label for="Sfname">SPOUSE FIRST NAME</label>
-          <input type="text" id="Sfname" name="spousefirstname" placeholder="Enter your spouse first name"
-            value="spouse first name">
-
-          <label for="Smname">SPOUSE MIDDLE INITIALS</label>
-          <input type="text" id="smname" name="firstname" placeholder="Enter your first name" value="spouse mid init">
-
-          <label for="Slname">SPOUSE LAST NAME</label>
-          <input type="text" id="Slname" name="Slastname" placeholder="Enter your spouse last name"
-            value="spouse last name">
-
-          <label for="spousessn">SPOUSE SOCIAL SECURITY NUMBER</label>
-          <input type="text" id="spousessn" name="spousessnumber" placeholder="000-00-0000" value="000-00-0000">
-
-          <label for="sdob">SPOUSE DATE OF BIRTH</label>
-          <input type="text" id="sdob" name="sdateofbirth" placeholder="Month/Day/Year" value="Month/Day/Year">
-
-          <label for="homeaddress">ADDRESS 1</label>
-          <input type="text" id="addressOne" name="Haddress" placeholder="Enter Street and Apartment Number"
-            value="Enter Street and Apartment Number">
-
-          <label for="homeaddress">ADDRESS 2</label>
-          <input type="text" id="addressTwo" name="Haddress" placeholder="Enter Street and Apartment Number"
-            value="Enter Street and Apartment Number">
-
-          <label for="homeaddress">APT #</label>
-          <input type="text" id="addressThree" name="Haddress" placeholder="Enter Street and Apartment Number"
-            value="Enter Street and Apartment Number">
-
-          <label for="Caddress">CITY</label>
-          <input type="text" id="city" name="city" placeholder="Enter your City" value="Enter your City">
-
-          <label for="Saddress">STATE</label>
-          <input type="text" id="state" name="state" placeholder="Enter your State" value="Enter your State">
-
-          <label for="Zipcode">ZIP CODE</label>
-          <input type="text" id="zipCode" name="Zipcode" placeholder="Enter your Zip Code" value="Enter your Zip Code">
-
-          <label for="foreignCountryName">FOREIGN COUNTRY NAME</label>
-          <input type="text" id="foreignCountryName" name="fCountryName" placeholder="Enter your Country Name"
-            value="Enter your Country Name">
-
-          <label for="foreignProvinceState">FOREIGN PROVINCE STATE</label>
-          <input type="text" id="foreignProvinceState" name="fProvinceState" placeholder="Enter your Province State"
-            value="Enter your Province State">
-
-          <label for="foreignPostalCode">FOREIGN POSTAL CODE</label>
-          <input type="text" id="foreignPostalCode" name="fPostalCode" placeholder="Enter your Postal Code"
-            value="Foreign Code">
-
-          <label for="phone">PHONE (DAY)</label>
-          <input type="text" id="phone" name="Phonenumber" placeholder="(000) 00-0000" value="(000) 00-0000">
-
-          <label for="email">EMAIL ADDRESS</label>
-          <input type="text" id="email" name="emailaddress" placeholder="Enter your email address"
-            value="Enter your email address">
-
-
-        </div>
-
-
-        <input id="save-button" type="submit" value="Save">
-
-
-
-
-
-
-      </form>
+      </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/members.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/members.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
 </body>
 
 </html>
